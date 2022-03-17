@@ -63,11 +63,11 @@ h6 {
 }
 
 #banner {
-  background-image: url("../images/banner.jpg");
+  background-image:url("../images/banner.jpg");
   background-size: cover;
-  height: 70%;
+  height: 90%;
   width: 100%;
-  padding-top: 20%;
+  padding-top:5%;
 }
 .banner {
   padding: 5px;
@@ -109,6 +109,39 @@ h6 {
 .apply_button:hover {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+  
+
+.programs{
+  position: relative;
+  top: 20px;
+  font-size: 1.5em;
+  color: black;
+  font-weight: bold;
+  text-align: left;
+}
+
+#program_section{
+  position: relative;
+  top:25px;
+  font-size: 1.1em;
+  font-family:"Josefin Sans", sans-serif;
+  color: #004f7d; 
+  text-align:left;
+  background-image:white;
+  height: 80%;
+  border-radius: 3%;
+  margin-right: 10%;
+  margin-left: 10%;
+
+}
+.program_section h3 {
+  font-size: 2em;
+  color:#004f7d;
+  text-align: center;
+  vertical-align:sub;
+  text-transform: capitalize;
+  padding: 30px;
 }
 
 #contact_img {
