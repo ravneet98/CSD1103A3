@@ -25,8 +25,9 @@ section {
   color: white;
   letter-spacing: 1px;
   cursor: pointer;
-  max-width: 10%;
+  /*max-width: 10%;*/
   float: left;
+  width: 200px;
 }
 
 nav {
@@ -46,7 +47,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: grey;
+  color:#00ade5;
   text-decoration: underline;
   text-decoration: none;
 }
@@ -65,9 +66,10 @@ h6 {
 #banner {
   background-image:url("../images/banner.jpg");
   background-size: cover;
-  height: 90%;
+  height: 60%;
   width: 100%;
   padding-top:5%;
+  background-position: center bottom;
 }
 .banner {
   padding: 5px;
@@ -93,7 +95,7 @@ h6 {
   text-align: left;
 }
 .apply_button {
-  background-color: #004f7d; /* Green */
+  background-color: #00ade5; /* Green */
   border: none;
   color: white;
   padding: 15px 32px;
@@ -109,6 +111,7 @@ h6 {
 .apply_button:hover {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    background: #004f7d;
 }
   
 
@@ -121,15 +124,14 @@ h6 {
   text-align: left;
 }
 
-#program_section{
-  position: relative;
-  top:25px;
+.program_section{
+  /*position: relative;
+  top:25px; */
   font-size: 1.1em;
   font-family:"Josefin Sans", sans-serif;
   color: #004f7d; 
   text-align:left;
-  background-image:white;
-  height: 80%;
+  height: auto;
   border-radius: 3%;
   margin-right: 10%;
   margin-left: 10%;
@@ -142,6 +144,7 @@ h6 {
   vertical-align:sub;
   text-transform: capitalize;
   padding: 30px;
+  margin-bottom: 0;
 }
 
 #contact_img {
@@ -196,7 +199,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #037abe;
+  background-color: #00ade5;
 }
 footer {
   display: block;
@@ -206,7 +209,7 @@ footer {
   padding: 2%;
 }
 .footer_text span {
-  color: rgb(47, 47, 47);
+  color: #00ade5;
 }
 .footer_text {
   margin-bottom: 1rem;
@@ -217,7 +220,36 @@ footer {
   text-transform: none;
 }
 
+ol.program_list li{
+  margin: 15px 0;
+  padding-right: 10px;
+}
+ol.program_list{    
+  column-count: 2;
+  padding-bottom: 4%;
+  margin-left: 5%;
+  color:#00ade5;
+}
+ol.program_list li a{
+  color: #004f7d;
+  text-decoration: none;
+}
+ol.program_list li a:hover{
+  color: #00ade5;
+}
+
+
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (min-width: 900px) and (max-width: 1024px) {
+  #banner{
+    height: 40%;
+  }
+  ul.header-menu li{
+    font-size: small;
+    margin-left: 10px;
+  }
+}
+
 @media screen and (min-width: 480px) and (max-width: 900px) {
   .column,
   input[type="submit"] {
@@ -229,13 +261,18 @@ footer {
     height: 100%;
     margin: 5px;
   }
+  #banner{
+    height: 30%;
+  }
   .logo {
     color: white;
     letter-spacing: 1px;
     cursor: pointer;
-    max-width: 20%;
+    /*max-width: 20%;*/
     float: left;
     text-align: center;
+    width: 140px;
+    padding-top: 14px;
   }
 
   #contact_img {
@@ -256,6 +293,13 @@ footer {
   input[type="submit"] {
     width: 30%;
   }
+  ul.header-menu li{
+    font-size: small;
+    margin-left: 10px;
+  }
+  ol.program_list{
+    column-count: 1;
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -265,7 +309,9 @@ footer {
     margin-top: 8px;
   }
   .logo {
-    display: none;
+    /*display: none;*/
+    width: 100%;
+    margin-bottom: 3%;
   }
 
   .heading {
@@ -299,11 +345,21 @@ footer {
   input[type="submit"] {
     width: 30%;
   }
+  ol.program_list{
+    column-count: 1;
+  }
+  .program_section h3{
+    font-size: 1.5em;
+    line-height: 1.2em;
+  }
 }
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   /* Styles */
+  #banner {
+    height: 30%;
+  }
 }
 
 /* Smartphones (landscape) ----------- */
